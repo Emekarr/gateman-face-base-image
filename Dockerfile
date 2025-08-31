@@ -30,6 +30,9 @@ RUN apt-get update && apt-get install -y \
     libsqlite3-dev \
     libboost-system-dev \
     libboost-thread-dev \
+    libpng-dev \
+    libjpeg-dev \
+    libtiff-dev \
     curl \
     wget \
     bzip2 \
@@ -95,6 +98,10 @@ RUN apt-get update && apt-get install -y \
     liblapack3 \
     libatlas3-base \
     libsqlite3-0 \
+    libavcodec58 \
+    libavformat58 \
+    libavutil56 \
+    libswscale5 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy built libraries from builder stage
